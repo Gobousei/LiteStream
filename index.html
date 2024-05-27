@@ -10,6 +10,10 @@
         h2{
             margin-top: 50px;
         }
+        h3{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
         .title{
             font-size: 27px;
         }
@@ -47,20 +51,20 @@
     <h2  class="title has-danger">注意</h2>
     <p>これらの設定を行うと、NDIを使用している間、カメラ用機器のカメラ、マイクへのアクセス権限が映像送信機機に移ります。</p>
     <h2  class="title">設定手順</h2>
-    <h3>1.OBS Studio（仮想カメラ）のインストール</h3>
+    <h3 class="has-text-weight-semibold">1.OBS Studio（仮想カメラ）のインストール</h3>
     <p><a href="https://obsproject.com/ja/download" target="_blank">こちら</a>から、インストールしてください。</p>
     <p>インストール後、自動構成ウィザードが開かれますが、キャンセルを押してください。</p>
 
-    <h3>2.NDI（映像転送用）のインストール</h3>
+    <h3 class="has-text-weight-semibold">2.NDI（映像転送用）のインストール</h3>
     <p><a href="https://github.com/obs-ndi/obs-ndi/releases" target="_blank">こちらのサイト</a>から、.exeファイルをダウンロードしてインストールします。</p>
     <img src="./img/ndi.png" width="90%">
     <p>インストールを実行しようとすると、セキュリティ警告がでます。「詳細情報」をクリックして、実行します。</p>
     <p>インストール後にネットワークに関する警告が出てくるので、アクセスを許可してください。これを許可しないと、通信ができません。</p>
 
-    <h3>3.NDI Runtime（映像調整用）のインストール</h3>
+    <h3 class="has-text-weight-semibold">3.NDI Runtime（映像調整用）のインストール</h3>
     <p><a href="http://ndi.link/NDIRedistV5" target="_blank">こちら</a>をクリックして、ダウンロード・インストールします。</p>
 
-    <h3>4.カメラ用機器の設定</h3>
+    <h3 class="has-text-weight-semibold">4.カメラ用機器の設定</h3>
     <p>0.LANケーブルでPCとスイッチングハブを接続します。</p>
     <p>1.OBS Studioを再起動し、「ツール」から、「NDI™ Output settings」をクリックします。</p>
     <img src="./img/NDI_setting.png">
@@ -70,7 +74,7 @@
     <img src="./img/camera.png">
     <p>PCのwifiを切断して設定完了です。</p>
 
-    <h3>5.映像送信機器の設定</h3>
+    <h3 class="has-text-weight-semibold">5.映像送信機器の設定</h3>
     <p>0.LANケーブルでPCとスイッチングハブを接続します。</p>
     <p>1.OBS Studioを再起動します。</p>
     <p>2.「ソース」にある＋ボタンを押し、「NDI™ Output settings」をクリックします。</p>
@@ -82,9 +86,9 @@
 
     <h2  class="title">推奨構成</h2>
     <img src="./img/system.png" width="90%">
-    <h3>映像送信機器</h3>
+    <h3 class="has-text-weight-semibold">映像送信機器</h3>
     <p>映像送信機機は、全員の良く見える場所に設置し、先生の映像を投影します。</p>
-    <h3>カメラ用機器</h3>
+    <h3 class="has-text-weight-semibold">カメラ用機器</h3>
     <p>カメラ用機器は、映像を送信するだけです。マイクのオン、オフは映像送信機器で操作可能です。</p>
 
         <a href="https://bbit-lab.com/obs-ndi/" target="_blank">参考にしたサイト</a>
