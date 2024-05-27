@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>通信最適化プロジェクト</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
     <style>
         h2{
             margin-top: 50px;
         }
+        img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
-    <h1>通信最適化プロジェクト</h1>
-    <h2>概要</h2>
+    <section class="hero is-dark">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+                通信最適化プロジェクト
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+    <h2  class="title">概要</h2>
     <p>現在、鳥大オケではオンラインで外部の先生と繋ぎ、指導していただくオンライン合奏が行われていますが、通信状況が不安定で、映像が途絶えることが多々あります。</p>
         通信最適化プロジェクトは、この状況を改善するためのプロジェクトです。</p>
         このためには専用のソフト、設定が必要になるため、下の文章の手順に従って設定を行ってください。</p>
         なお、このページはデータ量削減のため、装飾を削減しております（手抜き）。
     </p>
-    <h2>詳細説明</h2>
+    <h2  class="title">詳細説明</h2>
     <p>
         本来ルータなどの通信機器は、送信側と受信側の一対一の通信しか行えず、この送信・受信する機器を高速で切り替えることで複数台のパソコンが同時に接続しているように見せています。</p>
         オンライン合奏では、複数のパソコンがSkypeサーバーに同時に接続する必要があり、この時のデータ量や切り替え回数が膨大になり、ルータに大きな負荷をかけています。</p>
         そこで、複数台のパソコンから送信される映像を、Lanで一つのパソコンに集約し、中心となるパソコンで映像を合成しルータに接続することで、送受信するデータ量を大幅に減らす接続方法を提案します。
     </p>
     <img src="./img/network.png" width="90%">
-    <h2 style="color:red">注意</h2>
+    <h2  class="title has-danger">注意</h2>
     <p>これらの設定を行うと、NDIを使用している間、カメラ用機器のカメラ、マイクへのアクセス権限が映像送信機機に移ります。</p>
-    <h2>設定手順</h2>
+    <h2  class="title">設定手順</h2>
     <h3>1.OBS Studio（仮想カメラ）のインストール</h3>
     <p><a href="https://obsproject.com/ja/download" target="_blank">こちら</a>から、インストールしてください。</p>
     <p>インストール後、自動構成ウィザードが開かれますが、キャンセルを押してください。</p>
@@ -61,7 +77,7 @@
     <p>5.最後に右下にある、「仮想カメラ開始」をクリックして会議に参加してください。</p>
     
 
-    <h2>推奨構成</h2>
+    <h2  class="title">推奨構成</h2>
     <img src="./img/system.png" width="90%">
     <h3>映像送信機器</h3>
     <p>映像送信機機は、全員の良く見える場所に設置し、先生の映像を投影します。</p>
@@ -69,5 +85,7 @@
     <p>カメラ用機器は、映像を送信するだけです。マイクのオン、オフは映像送信機器で操作可能です。</p>
 
         <a href="https://bbit-lab.com/obs-ndi/" target="_blank">参考にしたサイト</a>
+        </div>
+        </section>
 </body>
 </html>
